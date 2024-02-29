@@ -48,6 +48,11 @@ class CharList extends Component {
                                 {chars.map((char) => {
                                     return (
                                         <li
+                                            onClick={() =>
+                                                this.props.onCharSelected(
+                                                    char.id
+                                                )
+                                            }
                                             key={char.id}
                                             className="char__item char__item_selected"
                                         >
